@@ -10,14 +10,16 @@ allowed_vehicles = [
 
 #display menu
 print("********************************")
-print("AutoCountry Vehicle Finder v0.2")  
+print("AutoCountry Vehicle Finder v0.3")
 print("********************************")
 print("Please Enter the following number below from the following menu:")
 print(" ")
 print("1. PRINT all Authorized Vehicles")
-print("2. SEARCH for Authorized Vehicle") 
-print("3. Exit") 
+print("2. SEARCH for Authorized Vehicle")
+print("3. ADD Authorized Vehicle")
+print("4. Exit")
 print(" ")
+
 
 #user input
 running = True
@@ -31,13 +33,14 @@ while running:
             print(vehicle)
         print(" ")
         print("********************************")
-        print("AutoCountry Vehicle Finder v0.2")  
+        print("AutoCountry Vehicle Finder v0.3")  
         print("********************************")
         print("Please Enter the following number below from the following menu:")
         print(" ")
         print("1. PRINT all Authorized Vehicles")
-        print("2. SEARCH for Authorized Vehicle") 
-        print("3. Exit")  
+        print("2. SEARCH for Authorized Vehicle")
+        print("3. ADD Authorized Vehicle")  
+        print("4. Exit")  
         print(" ")
 
     elif userChoice == "2":  
@@ -48,16 +51,33 @@ while running:
             print(f"{vehicle_name} is not an authorized vehicle, if you received this in error please check the spelling and try again")
         print(" ")
         print("********************************")
-        print("AutoCountry Vehicle Finder v0.2")
+        print("AutoCountry Vehicle Finder v0.3")
         print("********************************")
         print("Please Enter the following number below from the following menu:")
         print(" ")
         print("1. PRINT all Authorized Vehicles")
         print("2. SEARCH for Authorized Vehicle")
-        print("3. Exit")
+        print("3. ADD Authorized Vehicle")
+        print("4. Exit")
         print(" ")
 
-    elif userChoice == "3":  
+    elif userChoice == "3": 
+        new_vehicle = input("Please Enter the full Vehicle name you would like to add: ")
+        allowed_vehicles.append(new_vehicle)
+        print(f'You have added "{new_vehicle}" as an authorized vehicle')
+        print(" ")
+        print("********************************")
+        print("AutoCountry Vehicle Finder v0.3")  
+        print("********************************")
+        print("Please Enter the following number below from the following menu:")
+        print(" ")
+        print("1. PRINT all Authorized Vehicles")
+        print("2. SEARCH for Authorized Vehicle")
+        print("3. ADD Authorized Vehicle") 
+        print("4. Exit")  
+        print(" ")
+
+    elif userChoice == "4":  
         print("Thank you for using the AutoCountry Vehicle Finder, good-bye!")
         print(" ")
         running = False
