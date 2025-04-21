@@ -5,7 +5,9 @@ allowed_vehicles = [
         'Chevrolet Silverado',
         'Tesla CyberTruck',
         'Toyota Tundra',
-        'Nissan Titan'
+        'Nissan Titan',
+        'Rivian R1T', 
+        'Ram 1500'
     ]
 
 #display menu
